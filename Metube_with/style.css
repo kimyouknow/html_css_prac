@@ -1,0 +1,247 @@
+:root {
+  /* color */
+  --white-color: #ffffff;
+  --black-color: #181818;
+  --red-color: #ff0000;
+  --blue-color: #3e87a5;
+  --grey-color: #303030;
+  --grey-light-color: #909090;
+  --grey-dark-color: #202020;
+
+  /* size */
+  --side-padding: 12px;
+  --profile-size: 36px;
+
+  /* font size */
+  --font-large: 24px;
+  --font-medium: 20px;
+  --font-small: 18px;
+  --font-micro: 14px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Gothic A1", sans-serif;
+  background-color: var(--black-color);
+  color: var(--white-color);
+}
+ul {
+  list-style: none;
+}
+
+button,
+button:focus {
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+/* header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  background-color: var(--grey-color);
+  color: var(--white-color);
+  padding: var(--side-padding);
+  font-size: var(--font-large);
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+}
+
+header .logo #logo_metube {
+  color: var(--red-color);
+  padding: 0 var(--side-padding);
+}
+
+header .icons .fa-search {
+  margin-right: var(--side-padding);
+}
+
+/* video player */
+.player {
+  position: sticky;
+  top: 0;
+  text-align: center;
+  background-color: var(--black-color);
+}
+
+.player video {
+  width: 100%;
+  height: 100%;
+  max-width: 1000px;
+}
+
+/* info video */
+.info_video {
+  padding: var(--side-padding);
+}
+
+.info_video .hashtag .hashtags {
+  display: flex;
+  font-size: var(--font-small);
+  color: var(--blue-color);
+}
+
+.info_video .hashtag .hashtags li {
+  margin-right: var(--side-padding);
+}
+
+.info_video .video_title {
+  display: flex;
+  flex-direction: column;
+  font-size: var(--font-medium);
+  padding: var(--side-padding) 0;
+}
+
+.info_video .video_title .titleAndButton {
+  display: flex;
+}
+
+.info_video .title {
+  width: 100%;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  margin-right: var(--side-padding);
+}
+.info_video .video_title .moreButton {
+  height: 100%;
+}
+
+.info_video .views {
+  font-size: var(--font-small);
+  color: var(--grey-light-color);
+}
+
+.info_video .actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.info_video .actions .buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info_video .actions button {
+  font-size: var(--font-large);
+  background-color: var(--black-color);
+  color: var(--grey-light-color);
+  margin: 0 14px;
+}
+.info_video .actions .active {
+  color: var(--blue-color);
+}
+
+.info_video .actions span {
+  font-size: var(--font-medium);
+  color: var(--grey-light-color);
+}
+
+/* info_channel */
+.info_channel {
+  display: flex;
+  justify-content: space-around;
+  margin: var(--side-padding) 0;
+  border-top: 1px solid var(--grey-light-color);
+  border-bottom: 1px solid var(--grey-light-color);
+}
+.info_channel .channel_tumbnail {
+  padding-top: 14px;
+}
+.info_channel .profile {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+.info_channel .channel_subscribe {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--side-padding);
+}
+.info_channel .channel_subscribe .meta_data {
+  display: flex;
+  flex-direction: column;
+}
+.info_channel .channel_subscribe .meta_subscirbers {
+  font-size: var(--font-micro);
+  color: var(--grey-light-color);
+}
+.info_channel .meta_button_subscribe {
+  font-size: var(--font-medium);
+  padding: var(--side-padding);
+  margin: var(--side-padding);
+  border-style: none;
+  background-color: var(--grey-color);
+  color: var(--grey-light-color);
+}
+.info_channel .video_info {
+  padding: var(--side-padding);
+}
+.info_channel .video_info span {
+  width: 100%;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+.info_channel .video_info button {
+  background-color: var(--black-color);
+  color: var(--grey-light-color);
+}
+/* comment */
+
+/* video_list */
+.video_list .upnext {
+  font-size: var(--font-micro);
+  color: var(--grey-light-color);
+  margin-bottom: calc(var(--side-padding) / 2);
+}
+.video_list .item {
+  display: flex;
+  padding-bottom: calc(var(--side-padding) / 2);
+}
+.video_list .item .img {
+  flex: 1 1 40%;
+  margin-right: calc(var(--side-padding) / 2);
+}
+.video_list .item img {
+  width: 100%;
+}
+
+.video_list .item .info {
+  display: flex;
+  flex: 1 1 55%;
+  flex-direction: column;
+}
+
+.video_list .item .info_title {
+  font-size: var(--font-small);
+}
+.video_list .item .info_name {
+  font-size: var(--font-micro);
+}
+
+.all_about {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .all_about {
+    flex-direction: row;
+    width: 1800px;
+    margin: auto;
+  }
+}

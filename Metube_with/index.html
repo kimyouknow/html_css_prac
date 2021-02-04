@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metube With </title>
+    <link rel="shortcut icon" href="https://www.youtube.com/s/desktop/a1a86829/img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+        integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@500&display=swap" rel="stylesheet" />
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+    <!--Header-->
+    <header>
+        <div class="logo">
+            <i class="fas fa-bars"></i>
+            <i class="fab fa-youtube" id="logo_metube"></i>
+            <span class="title">MeTube</span>
+        </div>
+        <div class="icons">
+            <i class="fas fa-search"></i>
+            <i class="fas fa-ellipsis-v"></i>
+        </div>
+    </header>
+    <main class="all_about">
+        <div class="except_list">
+            <!-- video player -->
+            <section class="player">
+                <video controls src="video/video.mp4"></video>
+            </section>
+            <!-- video infomation -->
+            <section class="info_video">
+                <div class="hashtag">
+                    <ul class="hashtags">
+                        <li>#dreamcoding</li>
+                        <li>#coding</li>
+                        <li>#아무거나</li>
+                    </ul>
+                </div>
+                <div class="video_title">
+                    <div class="titleAndButton">
+                        <span class="title">
+                            비디오에 포함되어 있는 오디오의 기본 설정을 나타내는
+                            부울 속성입니다. 설정하면 오디오가 나오지 않습니다. 기본 값은
+                            false이며 이는 비디오가 재생되면 오디오도 같이 재생됨을 의미합니다.
+                        </span>
+                        <button class="moreButton">
+                            <i class="fas fa-caret-down"></i>
+                        </button>
+                    </div>
+                    <span class="views">
+                        1M 1 month ago
+                    </span>
+                </div>
+                <div class="action_button">
+                    <ul class="actions">
+                        <li>
+                            <span>
+                                조회수 4.9만회
+                            </span>
+                        </li>
+                        <div class="buttons">
+                            <li>
+                                <button class=" active action_good">
+                                    <i class="fas fa-thumbs-up"></i>
+                                    <span>2.5 천</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="action_bad">
+                                    <i class="fas fa-thumbs-down"></i>
+                                    <span>9</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="action_share">
+                                    <i class="fas fa-share"></i>
+                                    <span>공유</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="action_save">
+                                    <i class="fas fa-plus"></i>
+                                    <span>저장</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="action_etc">
+                                    <i class="fas fa-ellipsis-h"></i>
+                                </button>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+            </section>
+            <!-- infomation of channel -->
+            <section class="info_channel">
+                <div class="channel_tumbnail">
+                    <img class="profile" src="image/image.jpg" alt="/">
+                </div>
+                <div>
+                    <div class="channel_subscribe">
+                        <div class="meta_data">
+                            <span class="meta_title">다지인코딩</span>
+                            <span class="meta_subscirbers">구독자 100만명</span>
+                        </div>
+                        <button class="meta_button_subscribe">구독중</button>
+                    </div>
+                    <div class="video_info">
+                        <span>
+                            스케치 강좌 일곱 번째입니다. 이번에는 리사이징 기능을 배워보겠습니다. 스케치 툴에서 가장 신박한, 포토샵에는 없는 기능 중에 하나죠.
+                            아트 보드의 사이즈를 바꿀 경우에 그 사이즈에 맞게 반응형 웹처럼 잡아주는 기능입니다.
+                            만약 안드로이드로 작업했을 경우에 360*640으로 했을 텐데 iOS 작업도 해야 되는 경우라면 375*667로 늘려줘야 되는 거죠. 그럴 때 각 요소들을 스케일로
+                            늘리는 것이
+                            아니라 UI
+                            디자이너의 의도에 맞게 리사이징이 됩니다.
+                        </span>
+                        <button>
+                            <span>더보기</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <!-- comment -->
+            <section class="comment">
+                <!-- tb형태로 반복?  -->
+                <div class="comment_thumbnail">
+                    <!-- img넣기 -->
+                </div>
+                <div class="comment_info">
+                    <div class="comment_num">
+                        <span>김찌미</span>
+                        <span>1년전</span>
+                    </div>
+                    <div class="comment_contents">\
+                        개오래걸린다. 할것도 많고;;
+                    </div>
+                    <div class="icons">
+                        <!-- 위에서 쓴거 가져오기 -->
+                    </div>
+                </div>
+            </section>
+
+        </div>
+        <section class="video_list">
+            <span class="upnext">Up Next</span>
+            <ul>
+                <li class="item">
+                    <div class="img"><img class="upnext_thunbnail" src="/image/list.png" alt="/"></div>
+                    <div class="info">
+                        <span class="info_title">찌미야 살려줘,,,찌미야 살려줘,,,찌미야 살려줘,,,찌미야 살려줘,,,찌미야 살려줘,,,</span>
+                        <span class="info_name">찌미코딩 by 윤호</span>
+                        <div>
+                            <span class="info_view">182k views</span>
+                            <span>-</span>
+                            <span class="info_time">9개월전</span>
+                        </div>
+                    </div>
+                    <button class="moreButton"></button>
+                </li>
+                <li class="item">
+                    <div class="img"><img class="upnext_thunbnail" src="/image/list.png" alt="/"></div>
+                    <div class="info">
+                        <span class="info_title">찌미야 살려줘,,,찌미야 살려줘,,,찌미야 살려줘,,,찌미야 살려줘,,,찌미야 살려줘,,,</span>
+                        <span class="info_name">찌미코딩 by 윤호</span>
+                        <div>
+                            <span class="info_view">182k views</span>
+                            <span>-</span>
+                            <span class="info_time">9개월전</span>
+                        </div>
+                    </div>
+                    <button class="moreButton"></button>
+                </li>
+                <li class="item">
+                    <div class="img"><img class="upnext_thunbnail" src="/image/list.png" alt="/"></div>
+                    <div class="info">
+                        <span class="info_title">찌미야 살려줘,,,찌미야 살려줘,,,찌미야 살려줘,,,찌미야 살려줘,,,찌미야 살려줘,,,</span>
+                        <span class="info_name">찌미코딩 by 윤호</span>
+                        <div>
+                            <span class="info_view">182k views</span>
+                            <span>-</span>
+                            <span class="info_time">9개월전</span>
+                        </div>
+                    </div>
+                    <button class="moreButton"></button>
+                </li>
+            </ul>
+
+        </section>
+    </main>
+</body>
+
+</html>
